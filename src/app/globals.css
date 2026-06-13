@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0a0014;
+  color: #e2e8f0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a0b2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #10ffcb;
+  border-radius: 4px;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px #10ffcb, 0 0 10px #10ffcb; }
+  50% { box-shadow: 0 0 15px #10ffcb, 0 0 25px #10ffcb; }
+}
+
+.glow-anim {
+  animation: glow 2s ease-in-out infinite;
+}
